@@ -555,8 +555,7 @@ footer ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 5px 5px;
-        
+        padding: 5px 5px;     
     }
     
     .navbar ul {
@@ -572,7 +571,6 @@ footer ul {
         justify-content: center;
         transform: translateX(200%);
         transition: all 0.4s ease-out;
-
    }
 
    .navbar li, .navbar a {
@@ -587,7 +585,6 @@ footer ul {
    #hero {
     background: url(./assets/img/maleta.jpg) no-repeat cover;
     background-position: center ;
-
     height: 600px;
    }
 
@@ -612,8 +609,7 @@ footer ul {
         align-items: center;
         justify-content: center;
         gap:105px;
-        background-position: center;
-        
+        background-position: center;   
     }
 
     .about-text {
@@ -630,10 +626,6 @@ footer ul {
 
     .about-images {
         display: none;
-/*         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5px; */
     }
 
     #services {
@@ -672,6 +664,35 @@ footer ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+    }
+
+    .contact-img iframe{
+        width:300px;
+        height: 300px;
+    }
+
+    footer {
+        display: flex;
+        height: 150px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #152531;
+    }
+
+    .logo-footer {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        height: 100px;
+        padding: 10px 20px 20px 35px;
+    }
+
+    .logof {
+        width:80%;
+        height: 80%;
 
     }
 }
