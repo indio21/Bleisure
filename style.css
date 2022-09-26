@@ -21,7 +21,7 @@ html {
     display: flex;
     align-content: center;
     justify-content: space-between;
-    height: 90px;
+    height: 80px;
     width: 100%;
     padding: 12px 60px 0px;
     position: fixed;
@@ -45,10 +45,14 @@ html {
 }
 
 .burger {
-    /*     display: none; */
-    position: relative;
+    display: none; 
+/*     position: relative; */
     height: 25px;
     width: 25px;
+}
+
+#toggle-menu {
+    display: none; 
 }
 
 .navbar {
@@ -64,7 +68,7 @@ html {
 }
 
 .navbar li,
-a {
+.navbar a, a {
     list-style: none;
     text-decoration: none;
     color: var(--text-color)
@@ -96,8 +100,9 @@ main {
     background-image: url(./assets/img/maleta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 112vh;
-    padding: 120px 30px;
+    height: 100vh;
+/*     padding: 120px 30px; */
+
 
 }
 
@@ -146,7 +151,6 @@ main {
     padding: 8px 15px;
     color: var(--background-color);
     font-weight: 500;
-
 }
 
 #login,
@@ -167,12 +171,13 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 600px;
+    height: auto;
     background-image: url(./assets/img/around.png);
     background-repeat: no-repeat;
     background-size: cover;
     gap: 200px;
-    padding: 25px 25px;
+    padding: 25px 25px 25px 25px;
+/*     margin-top:120px; */
 }
 
 .about-text {
@@ -180,10 +185,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*     width: 65%; */
-    max-width: 45%;
     gap: 10px;
-    height: 600px;
+    max-width: 45%;
+    padding: 65px 45px 45px 45px; 
     text-align: justify;
     letter-spacing: -0.25px;
 }
@@ -525,4 +529,149 @@ footer ul {
         {transform: scale(1);}
     to
         {transform: scale(1.2);}    
+}
+
+/*---responsibe---*/
+@media (max-width: 576px) {
+
+   
+}
+
+@media (max-width: 1050px) {
+    .burger {
+        display: block;
+        padding-top: 20px 20px;
+       }
+
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 auto;
+        width: 100%;
+        gap: 5%;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 5px;
+        
+    }
+    
+    .navbar ul {
+        display:flex;
+        background-color : var(--background-color);
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute ;
+        top: 80px;
+        left: 0;
+        flex-direction : column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.4s ease-out;
+
+   }
+
+   .navbar li, .navbar a {
+        color: var(--text-color);
+   }
+
+   #toggle-menu:checked ~ .navbar-list{
+    transform: translateX(0%);
+    transition: all 0.4s ease-in;
+   }
+
+   #hero {
+    background: url(./assets/img/maleta.jpg) no-repeat cover;
+    background-position: center ;
+
+    height: 600px;
+   }
+
+   .hero-text h2 {
+    display: none;
+    width:100px;
+    height: auto;
+    }
+
+    .hero-buttons {
+        padding-left: 0;
+    }
+
+    #register{
+        color: var(--background-color);
+        background-color: #417485;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:105px;
+        background-position: center;
+        
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 25px; 
+        text-align: center;
+        letter-spacing: -0.25px;
+        max-width: 100%;
+        padding-bottom: 25px;
+    }
+
+    .about-images {
+        display: none;
+/*         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px; */
+    }
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+        background: linear-gradient(to right, var(--background-color), #6397a8, #e9f8ff);
+    }
+
+    .services-image, .services-container, .services-list,.services-container h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 410px;
+    }
+
+    .services-container h1 {
+        max-width: 410px;
+        text-align: center;
+    }
+    
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
