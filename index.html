@@ -17,7 +17,7 @@
             <img src="./assets/img/logoazul.jpg" alt="logo" class="logo">
         </div>
         <nav class="navbar">
-            <label for="toggle-menu"><img src="./assets/img/burger.png" alt="icono burger" class="burger"></label>
+            <label for="toggle-menu"><img src="./assets/img/burger.png" alt="icono menu" class="burger icono"></label>
             <input type="checkbox" id="toggle-menu">
             <ul class="navbar-list">
                 <li><a href="#hero" rel="">HOME</a></li>
@@ -25,8 +25,7 @@
                 <li><a href="#services" rel="">SERVICIOS</a></li>
                 <li><a href="#promotions" rel="">PROMOCIONES</a></li>
                 <li><a href="#contact" rel="">CONTACTO</a></li>
-                <li> <img src="./assets/img/avion-ico.png" alt="icono avion" class="carrito"></li>
-                <li> </li>
+                <li><a href="#contact" rel=""><img src="./assets/img/avion-ico.png" alt="icono viajes" class="carrito icono"></a></li>
             </ul>
         </nav>
     </header>
@@ -36,8 +35,8 @@
                 <h2>Bleisure Turismo</h2>
                 <span>... una nueva forma de viajar</span>
                 <div class="hero-buttons">
-                    <a href="login.html" id="login">Ingresar</a>
-                    <a href="register.html" id="register">Registrarse</a>
+                    <a href="login.html" id="btn_login">Ingresar</a>
+                    <a href="register.html" id="btn_register">Registrarse</a>
                 </div>
             </div>
 
@@ -63,13 +62,13 @@
         </section>
         <section id="services">
             <div class="services-image">
-                <img src="./assets/img/services.jpg" alt="pizza 1" id="img-services">
+                <img src="./assets/img/services.jpg" alt="aeropuerto" id="img-services">
             </div>
             <div class="services-container">
                 <h1>Servicios a medida</h1>
                 <div class="services-list">
                     <div class="services-card">
-                        <img src="./assets/img/avion.png" alt="foto bennazianna">
+                        <img src="./assets/img/avion.png" alt="icono services">
                         <div class="services-text">
                             <h3>Aéreos</h3>
                         </div>
@@ -78,7 +77,7 @@
                         </div>
                     </div>
                     <div class="services-card">
-                        <img src="./assets/img/excursiones.png" alt="foto bennazianna">
+                        <img src="./assets/img/excursiones.png" alt="icono services">
                         <div class="services-text">
                             <h3>Excursiones</h3>
                         </div>
@@ -87,7 +86,7 @@
                         </div>
                     </div>
                     <div class="services-card">
-                        <img src="./assets/img/auto.png" alt="foto bennazianna">
+                        <img src="./assets/img/auto.png" alt="icono services">
                         <div class="services-text">
                             <h3>Alquiler</h3>
                         </div>
@@ -96,7 +95,7 @@
                         </div>
                     </div>
                     <div class="services-card">
-                        <img src="./assets/img/alojamiento-1.png" alt="foto bennazianna">
+                        <img src="./assets/img/alojamiento-1.png" alt="icono services">
                         <div class="services-text">
                             <h3>Alojamientos</h3>
                         </div>
@@ -105,7 +104,7 @@
                         </div>
                     </div>
                     <div class="services-card">
-                        <img src="./assets/img/crucero.png" alt="foto bennazianna">
+                        <img src="./assets/img/crucero.png" alt="icono services">
                         <div class="services-text">
                             <h3>Cruceros</h3>
                         </div>
@@ -114,7 +113,7 @@
                         </div>
                     </div>
                     <div class="services-card">
-                        <img src="./assets/img/traslados.png" alt="foto bennazianna">
+                        <img src="./assets/img/traslados.png" alt="icono services">
                         <div class="services-text">
                             <h3>Traslados</h3>
                         </div>
@@ -148,25 +147,57 @@
                 <div class="promotions-list">
                     <h3>Promociones Exclusivas</h3>
                     <div class="promotions-list-cards">
-                        <div class="promotions-card">
-                            <img src="./assets/img/logooriginal-1.png" alt="promo1">
-                            <p>Turismo Corporativo</p>
-                            <div class="categorias-linea"></div>
+                        <div class="promotions-card promo-playa">
+                            <h2>11 de Agosto</h2>
+                            <h3>Playa del Carmen</h3>
+                            <p class="incluye">¿Qué incluye?</p>
+                            <img src="./assets/img/avion.png" class="ico-promo">
+                            <p>Aereos</p>
+                            <img src="./assets/img/auto.png" class="ico-promo">
+                            <p>Traslado</p>
+                            <img src="./assets/img/alojamiento-1.png" class="ico-promo">
+                            <p>7 noches all inclusive</p>
+                            <p class="tarifa">Tarifa final p/persona</p>
+                            <h2 class="precio">$273.000</h2>
                         </div>
-                        <div class="promotions-card">
-                            <img src="./assets/img/logooriginal-1.png" alt="promo2">
-                            <p>Turismo Experiencia</p>
-                            <div class="categorias-linea"></div>
+                        <div class="promotions-card promo-cuba">
+                            <h2>18 de Noviembre</h2>
+                            <h3>Cuba</h3>
+                            <p class="incluye">¿Qué incluye?</p>
+                            <img src="./assets/img/avion.png" class="ico-promo">
+                            <p>Aereos</p>
+                            <img src="./assets/img/auto.png" class="ico-promo">
+                            <p>Traslado</p>
+                            <img src="./assets/img/alojamiento-1.png" class="ico-promo">
+                            <p>8 noches all inclusive</p>
+                            <p class="tarifa">Tarifa final p/persona</p>
+                            <h2 class="precio">1350usd</h2>
                         </div>
-                        <div class="promotions-card">
-                            <img src="./assets/img/logooriginal-1.png" alt="promo3">
-                            <p>Turismo Femme</p>
-                            <div class="categorias-linea"></div>
+                        <div class="promotions-card promo-miami">
+                            <h2>Diciembre</h2>
+                            <h3>Miami</h3>
+                            <p class="incluye">¿Qué incluye?</p>
+                            <img src="./assets/img/avion.png" class="ico-promo">
+                            <p>Aereos desde Asuncion</p>
+                            <img src="./assets/img/auto.png" class="ico-promo">
+                            <p>Traslado</p>
+                            <img src="./assets/img/alojamiento-1.png" class="ico-promo">
+                            <p>6 noches con desayuno</p>
+                            <p class="tarifa">Tarifa final p/persona</p>
+                            <h2 class="precio">$265.000</h2>
                         </div>
-                        <div class="promotions-card">
-                            <img src="./assets/img/logooriginal-1.png" alt="promo4">
-                            <p>Turismo Femme</p>
-                            <div class="categorias-linea"></div>
+                        <div class="promotions-card promo-sur">
+                            <h2>Febrero</h2>
+                            <h3>Bariloche</h3>
+                            <p class="incluye">¿Qué incluye?</p>
+                            <img src="./assets/img/avion.png" class="ico-promo">
+                            <p>Aereos desde Córdoba</p>
+                            <img src="./assets/img/auto.png" class="ico-promo">
+                            <p>Traslado</p>
+                            <img src="./assets/img/alojamiento-1.png" class="ico-promo">
+                            <p>6 noches con desayuno</p>
+                            <p class="tarifa">Tarifa final p/persona</p>
+                            <h2 class="precio">$38.000</h2>
                         </div>
                     </div>
                 </div>
@@ -197,17 +228,17 @@
     </main>
     <footer>
         <div class="logo-footer">
-            <img src="./assets/img/logob.png" alt="logo" class="logof">
-            <img src="./assets/img/logoazul.jpg" alt="logo" class="logof"> 
+            <img src="./assets/img/logob.png" alt="logo" class="logof logo-b">
+            <img src="./assets/img/logoazul.jpg" alt="logo" class="logof">
             <ul>
-            <li><a href="https://www.instagram.com/bleisure.turismo/" target="_blank">
-                    <img src="./assets/img/ico-i.png" alt="icono avion" class="icono"></a> </li>
-            <li> <a href="https://www.facebook.com/bleisureturismo/" target="_blank">
-                    <img src="./assets/img/ico-f.png" alt="icono burger" class="icono"></a></li>
-            <li> <a href="https://api.whatsapp.com/send?phone=543492648333" target="_blank"><img
-                        src="./assets/img/ico-w.png" alt="icono avion" class="icono"></a>
-            </li>
-             </ul>
+                <li><a href="https://www.instagram.com/bleisure.turismo/" target="_blank">
+                        <img src="./assets/img/ico-i.png" alt="icono avion" class="icono"></a> </li>
+                <li> <a href="https://www.facebook.com/bleisureturismo/" target="_blank">
+                        <img src="./assets/img/ico-f.png" alt="icono burger" class="icono"></a></li>
+                <li> <a href="https://api.whatsapp.com/send?phone=543492648333" target="_blank"><img
+                            src="./assets/img/ico-w.png" alt="icono avion" class="icono"></a>
+                </li>
+            </ul>
         </div>
     </footer>
 
