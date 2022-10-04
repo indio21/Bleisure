@@ -26,7 +26,6 @@ html {
     position: fixed;
     z-index: 1;
     background-color: var(--background-color);
-
 }
 
 .logo {
@@ -42,17 +41,19 @@ html {
     width: 35px;
 }
 
-.carrito {
+.user {
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    height: 35px;
+    width: 35px;
 }
 
 .burger {
-    display: none; 
+    display: none;
 }
 
 #toggle-menu {
-    display: none; 
+    display: none;
 }
 
 .navbar {
@@ -63,13 +64,14 @@ html {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 25px;
     gap: 50px;
 }
 
 .navbar li,
-.navbar a, a {
+.navbar a,
+a {
     list-style: none;
     text-decoration: none;
     color: var(--text-color)
@@ -108,7 +110,6 @@ main {
     padding-top: 3em;
     width: 65%;
     height: 600px;
-
 }
 
 .hero-text h2 {
@@ -133,7 +134,6 @@ main {
 .hero-buttons {
     display: flex;
     flex-direction: row;
-    padding-left: 5em;
     text-decoration: none;
     gap: 10px;
     padding-top: 20px;
@@ -158,6 +158,15 @@ main {
     color: var(--background-color);
 }
 
+.link-social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+    padding: 25px 20px;
+}
+
 #about {
     display: flex;
     flex-direction: row;
@@ -179,7 +188,7 @@ main {
     justify-content: center;
     gap: 10px;
     max-width: 45%;
-    padding: 65px 45px 45px 45px; 
+    padding: 65px 45px 45px 45px;
     text-align: justify;
     letter-spacing: -0.25px;
     color: var(--background-color);
@@ -225,7 +234,6 @@ main {
 
 .img-1:first-child {
     filter: drop-shadow(0px -1px 1px #ffffff);
-
 }
 
 #services {
@@ -244,7 +252,6 @@ main {
     gap: 20px;
     width: 550px;
     padding: 30px 15px;
-
 }
 
 .services-container h1 {
@@ -270,7 +277,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3px 3px; 
+    padding: 3px 3px;
 }
 
 .services-card:hover {
@@ -279,7 +286,7 @@ main {
     cursor: pointer;
 }
 
-.services-card img{
+.services-card img {
     height: 125px;
     width: 135px;
 }
@@ -290,7 +297,7 @@ main {
 
 #img-services {
     border-radius: 10px;
-    filter: drop-shadow(-1px 1px 2px #ffffff); 
+    filter: drop-shadow(-1px 1px 2px #ffffff);
 }
 
 #promotions {
@@ -299,14 +306,14 @@ main {
     justify-content: center;
     align-items: left;
     padding: 25px 25px;
-   
+
 }
 
 #promotions h4 {
     color: var(--text-color);
     text-shadow: 0px 0px 0px var(--text-color)
 }
-    
+
 
 .options {
     display: flex;
@@ -314,7 +321,7 @@ main {
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
-    padding:25px
+    padding: 25px
 }
 
 .options-card {
@@ -332,13 +339,13 @@ main {
     text-shadow: 1px 1px 3px #b2d9e6;
 }
 
-.options-card:hover{
-   transform: scale(1.1);
-   cursor: pointer;
-   box-shadow: 1px 1px 10px #6397a8;
+.options-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #6397a8;
 }
 
-.options-card img{
+.options-card img {
     width: 50px;
     height: 50px;
     padding: 5px 5px;
@@ -352,16 +359,17 @@ main {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    padding:25px
+    padding: 25px
 }
 
-.promotions-list h3{
+.promotions-list h3 {
     font-weight: bold;
     font-size: 40px;
-    color: var(--text-color)
+    color: var(--text-color);
+    text-shadow: -1px 1px 3px #074e66;
 }
 
-.promotions-list-cards{
+.promotions-list-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -369,13 +377,12 @@ main {
     align-items: center;
     gap: 25px;
     flex-wrap: wrap;
-    padding:25px;
+    padding: 25px;
 }
 
 .promotions-card {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(11, 1fr);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 260px;
@@ -384,13 +391,15 @@ main {
     gap: 5px;
     box-shadow: -1px 1px 3px #6397a8;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.promotions-card img {
-    margin-left: auto;
-    margin-right: auto;
+.promotions-card .compra {
+    background-color: rgb(255, 0, 0);
+    width: 60%;
 }
+
+
 
 .promotions-card:hover {
     cursor: pointer;
@@ -398,30 +407,40 @@ main {
 }
 
 
-.promo-playa,.promo-cuba, .promo-miami, .promo-sur{
+.promo-playa,
+.promo-cuba,
+.promo-miami,
+.promo-sur {
     background-image: url(./assets/img/playa.jpg);
     text-align: center;
     padding: 5px;
-    justify-content: center;   
+    justify-content: center;
 }
 
-.promo-playa h2,.promo-miami h2,.promo-cuba h2,.promo-sur h2{
+.promo-playa h2,
+.promo-miami h2,
+.promo-cuba h2,
+.promo-sur h2 {
     border: 1px solid var(--background-color);
     background-color: var(--background-color);
     border-radius: 25px;
     padding: 3px 3px;
     color: var(--text-color);
     font-size: 16px;
+    width: 100%;
 }
 
-.promo-playa p:not(.tarifa), .promo-miami p:not(.tarifa), 
-.promo-cuba p:not(.tarifa), .promo-sur p:not(.tarifa) {
+.promo-playa p:not(.tarifa),
+.promo-miami p:not(.tarifa),
+.promo-cuba p:not(.tarifa),
+.promo-sur p:not(.tarifa) {
     border-radius: 15px;
     padding: 1px 1px;
     color: var(--background-color);
     font-weight: 800;
     font-size: 14px;
     background-color: #ecf8fc;
+    width: 100%;
 }
 
 .incluye {
@@ -431,6 +450,7 @@ main {
 
 .tarifa {
     color: var(--text-color);
+    text-shadow: -1px 1px 3px #074e66;
 }
 
 .ico-promo {
@@ -438,15 +458,15 @@ main {
     height: 40px;
 }
 
-.promo-cuba{
+.promo-cuba {
     background-image: url(./assets/img/cuba1.jpg);
 }
 
-.promo-miami{
+.promo-miami {
     background-image: url(./assets/img/miami.jpg);
 }
 
-.promo-sur{
+.promo-sur {
     background-image: url(./assets/img/bariloche.jpg);
 }
 
@@ -454,66 +474,66 @@ main {
     font-weight: bold;
 }
 
-#contact{
+#contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 25px 25px;
     background: url(./assets/img/pai-azul.jpg) no-repeat;
-    background-position: center ;
+    background-position: center;
     height: 600px;
     width: 100%;
     height: auto;
     color: var(--background-color);
 }
 
-.contact-info{
+.contact-info {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 25px 25px;
-    gap:40px;
+    gap: 40px;
     width: 85%;
 }
 
-.contact-text{
+.contact-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:15px;
+    gap: 15px;
     font-size: 24px;
     font-weight: 600;
 }
 
-.contact-text img{
+.contact-text img {
     width: 35px;
     height: 45px;
 }
 
 #ico1 {
     width: 36px;
-    height: 40px; 
+    height: 40px;
 }
 
 #ico2 {
     width: 34px;
-    height: 36px; 
+    height: 36px;
 }
 
 #ico3 {
     width: 35px;
-    height: 45px; 
+    height: 45px;
 }
 
-.contact-text span{
+.contact-text span {
     font-size: 20px;
     font-weight: 700;
 }
 
-.contact-img iframe{
+.contact-img iframe {
     border-radius: 15px;
     box-shadow: 0px 0px 3px var(--background-color);
 }
@@ -549,22 +569,21 @@ footer ul {
 }
 
 @keyframes scaley {
-    from
-        {transform: scale(1);}
-    to
-        {transform: scale(1.2);}    
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
 }
 
-
-@media (max-width: 576px) {
-  
-}
 
 @media (max-width: 1050px) {
     .burger {
         display: block;
         padding-top: 20px 20px;
-       }
+    }
 
     .header {
         display: flex;
@@ -578,42 +597,44 @@ footer ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 5px 5px;     
+        padding: 5px 5px;
     }
-    
+
     .navbar ul {
-        display:flex;
-        background-color : var(--background-color);
+        display: flex;
+        background-color: var(--background-color);
         width: 100%;
         height: calc(100vh - 80px);
-        position: absolute ;
+        position: absolute;
         top: 80px;
         left: 0;
-        flex-direction : column;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         transform: translateX(200%);
         transition: all 0.4s ease-out;
-   }
+    }
 
-   .navbar li, .navbar a {
+    .navbar li,
+    .navbar a {
         color: var(--text-color);
-   }
+    }
 
-   #toggle-menu:checked ~ .navbar-list{
+    #toggle-menu:checked~.navbar-list {
         transform: translateX(0%);
         transition: all 0.4s ease-in;
-   }
 
-   #hero {
+    }
+
+    #hero {
         background: url(./assets/img/maleta.jpg) no-repeat cover;
-        background-position: center ;
+        background-position: center;
         height: 600px;
-   }
+    }
 
-   .hero-text h2 {
+    .hero-text h2 {
         display: none;
-        width:100px;
+        width: 100px;
         height: auto;
     }
 
@@ -621,7 +642,7 @@ footer ul {
         padding-left: 0;
     }
 
-    #register{
+    #register {
         color: var(--background-color);
         background-color: #417485;
     }
@@ -631,8 +652,8 @@ footer ul {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap:105px;
-        background-position: center;   
+        gap: 105px;
+        background-position: center;
     }
 
     .about-text {
@@ -640,7 +661,7 @@ footer ul {
         flex-direction: column;
         align-items: center;
         gap: 25px;
-        padding: 25px 25px; 
+        padding: 25px 25px;
         text-align: center;
         letter-spacing: -0.25px;
         max-width: 100%;
@@ -661,7 +682,10 @@ footer ul {
         background: linear-gradient(to right, var(--background-color), #6397a8, #e9f8ff);
     }
 
-    .services-image, .services-container, .services-list,.services-container h1{
+    .services-image,
+    .services-container,
+    .services-list,
+    .services-container h1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -673,15 +697,15 @@ footer ul {
         max-width: 410px;
         text-align: center;
     }
-    
-    #contact{
+
+    #contact {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .contact-info{
+    .contact-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -689,8 +713,8 @@ footer ul {
 
     }
 
-    .contact-img iframe{
-        width:300px;
+    .contact-img iframe {
+        width: 300px;
         height: 300px;
     }
 
@@ -713,8 +737,7 @@ footer ul {
     }
 
     .logof {
-        width:80%;
+        width: 80%;
         height: 80%;
-
     }
 }
