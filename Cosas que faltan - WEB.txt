@@ -1,0 +1,7 @@
+- Haga scroll el navbar				X
+- Terminar card de promociones
+- Formulario de contacto			X	
+- Redes sociales donde ponerlas			X
+- Pagina de login
+- Pagina de registro				 -- video del integrador y bem
+- Responsive con menu burger			X

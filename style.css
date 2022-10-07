@@ -54,15 +54,18 @@ html {
 }
 
 .navbar {
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .navbar ul {
     display: flex;
+    flex-direction: row;
     align-content: center;
     justify-content: center;
     padding-top: 15px;
-    padding-left: 25px;
     gap: 50px;
 }
 
@@ -562,7 +565,7 @@ footer ul {
     gap: 20px;
     list-style: none;
     text-decoration: none;
-    padding: 25px 20px;
+    padding: 15px 20px;
 }
 
 @keyframes scaley {
@@ -584,10 +587,10 @@ footer ul {
 
     .header {
         display: flex;
-        justify-content: flex-start;
-        padding: 0 auto;
+        flex-direction: row;
         width: 100%;
-        gap: 5%;
+        gap: 5px;
+        padding-left: 5px;
     }
 
     .navbar {
@@ -599,15 +602,15 @@ footer ul {
 
     .navbar ul {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: var(--background-color);
         width: 100%;
         height: calc(100vh - 80px);
         position: absolute;
         top: 80px;
         left: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         transform: translateX(200%);
         transition: all 0.4s ease-out;
     }
@@ -626,7 +629,8 @@ footer ul {
     #hero {
         background: url(./assets/img/maleta.jpg) no-repeat cover;
         background-position: center;
-        height: 600px;
+        /* height: 600px; */
+        height: 100vh;
     }
 
     .hero-text h2 {
@@ -651,6 +655,7 @@ footer ul {
         justify-content: center;
         gap: 105px;
         background-position: center;
+        height: 100vh;
     }
 
     .about-text {
@@ -736,5 +741,36 @@ footer ul {
     .logof {
         width: 80%;
         height: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .burger {
+        display: block;
+        padding-top: 20px 20px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding: 5px 5px;
+        gap: 45px;
+        padding-left: 2px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 5px;
+    }
+
+    #hero {
+        padding-top: 30px;
+    }
+
+    .hero-text {
+        padding-left:2em;
     }
 }
